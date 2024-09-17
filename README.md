@@ -1,6 +1,6 @@
 # Algebra
 
-[Algebra](https://mopsite.github.io/algebra/) 是一个小巧、快速且易用的 JavaScript 库，它用于初级的代数运算。
+[Algebra](https://mop233.github.io/algebra/) 是一个小巧、快速且易用的 JavaScript 库，它用于初级的代数运算。
 
 ## 安装使用
 
@@ -162,4 +162,4 @@ f1.gt(f2) // true
 f1.lt(f2) // false
 ```
 
-更多使用方法，请查看 [Algebra 官方文档](https://mopsite.github.io/algebra/)。
+更多使用方法，请查看 [Algebra 官方文档](https://mop233.github.io/algebra/)。

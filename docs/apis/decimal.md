@@ -166,7 +166,7 @@ d.valueOf() // 3
 ```
 
 ::: warning 注意
-尽量不要使用 Decimal 实例对象参与 JavaScript 的原生算术操作，否则可能会出现[小数精度不准确](https://mop233.github.io/posts/js-decimal)的问题。
+尽量不要使用 Decimal 实例对象参与 JavaScript 的原生算术操作，否则可能会出现[小数精度不准确](https://mopsite.github.io/posts/js-decimal)的问题。
 
 ```js
 const d = new Decimal(3.14)

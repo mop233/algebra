@@ -57,14 +57,14 @@ export default defineConfig({
     footer: {
       message:
         'Powered by <a href="https://vitepress.dev/zh" target="_blank" style="text-decoration: none;">VitePress</a>',
-      copyright: `© 2024-${new Date().getFullYear()} MIT <a href="https://mop233.github.io/" target="_blank" style="text-decoration: none;">猛吃雪糕</a>`
+      copyright: `© 2024-${new Date().getFullYear()} MIT <a href="https://mopsite.github.io/" target="_blank" style="text-decoration: none;">猛吃雪糕</a>`
     },
 
     nav: nav(),
     sidebar: sidebar(),
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/mopsite/algebra' },
+      { icon: 'github', link: 'https://github.com/mop233/algebra' },
       { icon: 'npm', link: 'https://www.npmjs.com/package/@mop233/algebra' }
     ]
   },
@@ -79,7 +79,7 @@ function nav() {
     { text: 'API', link: '/apis/decimal', activeMatch: '/apis/' },
     {
       text: version,
-      link: 'https://github.com/mopsite/algebra/blob/main/CHANGELOG.md'
+      link: 'https://github.com/mop233/algebra/blob/main/CHANGELOG.md'
     }
   ]
 }

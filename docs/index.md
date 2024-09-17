@@ -15,7 +15,7 @@ hero:
       link: /guide/start
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/mopsite/algebra
+      link: https://github.com/mop233/algebra
 
 features:
   - icon: 🌈
