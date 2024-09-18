@@ -19,6 +19,6 @@ export default defineConfig({
   plugins: [
     json(),
     babel({ babelHelpers: 'bundled', presets: ['@babel/preset-env'] }),
-    terser({ mangle: true })
+    terser({ mangle: false })
   ]
 })

@@ -1,6 +1,5 @@
 import Decimal from './decimal'
 import { DIV_BY_ZERO } from './errors'
-import { type } from './helpers'
 
 class Fraction {
   constructor(numer, denom = 1) {
@@ -12,8 +11,8 @@ class Fraction {
   }
 
   static compare(arg1 = new this(), arg2 = new this()) {
-    if (type(arg1) !== 'fraction') arg1 = new this(arg1)
-    if (type(arg2) !== 'fraction') arg2 = new this(arg2)
+    if (!(arg1 instanceof this)) arg1 = new this(arg1)
+    if (!(arg2 instanceof this)) arg2 = new this(arg2)
     let p1 = arg1.numer.mul(arg2.denom)
     let p2 = arg1.denom.mul(arg2.numer)
     if (p1.gt(p2)) {
@@ -93,7 +92,7 @@ class Fraction {
   }
 
   add(arg = this.#instance(0), simplify = false) {
-    if (type(arg) !== 'fraction') arg = this.#instance(arg)
+    if (!(arg instanceof this.constructor)) arg = this.#instance(arg)
     let l = Decimal.lcm(this.denom, arg.denom)
     let q1 = l.div(this.denom)
     let q2 = l.div(arg.denom)
@@ -102,18 +101,18 @@ class Fraction {
   }
 
   sub(arg = this.#instance(0), simplify = false) {
-    if (type(arg) !== 'fraction') arg = this.#instance(arg)
+    if (!(arg instanceof this.constructor)) arg = this.#instance(arg)
     return this.add(arg.neg(), simplify)
   }
 
   mul(arg = this.#instance(1), simplify = false) {
-    if (type(arg) !== 'fraction') arg = this.#instance(arg)
+    if (!(arg instanceof this.constructor)) arg = this.#instance(arg)
     let f = this.#instance(this.numer.mul(arg.numer), this.denom.mul(arg.denom))
     return simplify ? f.reduce() : f
   }
 
   div(arg = this.#instance(1), simplify = false) {
-    if (type(arg) !== 'fraction') arg = this.#instance(arg)
+    if (!(arg instanceof this.constructor)) arg = this.#instance(arg)
     return this.mul(arg.rec(), simplify)
   }
 
