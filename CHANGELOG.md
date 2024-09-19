@@ -1,3 +1,9 @@
+## 1.1.0 (2024-09-19)
+
+### Features
+
+- add declaration file
+
 ## 1.0.15 (2024-09-18)
 
 ### Bugs
