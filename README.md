@@ -59,7 +59,7 @@ const d2 = new Decimal(0.2)
 console.log(d1.add(d2).toString()) // '0.3'
 ```
 
-### CDN 引入
+### CDN
 
 The simplest way to use algebra.js in a browser is by importing it via [CDN](https://unpkg.com/@mop233/algebra). After importing, the browser will automatically add the algebra object to the global scope:
 
@@ -73,7 +73,7 @@ The simplest way to use algebra.js in a browser is by importing it via [CDN](htt
 </script>
 ```
 
-## 快速开始
+## Quick Start
 
 The algebra object contains three properties:
 
