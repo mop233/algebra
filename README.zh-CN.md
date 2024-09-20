@@ -2,13 +2,13 @@
   <h1>Algebra</h1>
   <p>简体中文 | <a href="./README.md" target="_blank">English</a></p>
   <p>
-    <a href="https://www.npmjs.com/package/@mop233/algebra" target="_blank" style="text-decoration: none;">
+    <a href="https://www.npmjs.com/package/@mop233/algebra" target="_blank">
       <img src=https://badgen.net/npm/v/@mop233/algebra>
     </a>
-    <a href="https://npm-stat.com/charts.html?package=%40mop233%2Falgebra" target="_blank" style="text-decoration: none;">
+    <a href="https://npm-stat.com/charts.html?package=%40mop233%2Falgebra" target="_blank">
       <img src=https://badgen.net/npm/dt/@mop233/algebra>
     </a>
-    <a href="https://github.com/mop233/algebra/blob/main/LICENSE" target="_blank" style="text-decoration: none;">
+    <a href="https://github.com/mop233/algebra/blob/main/LICENSE" target="_blank">
       <img src=https://badgen.net/npm/license/@mop233/algebra>
     </a>
   </p>
