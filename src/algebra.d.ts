@@ -20,7 +20,7 @@ export namespace algebra {
 
     isInteger(): boolean
     isEven(): boolean
-    isOddd(): boolean
+    isOdd(): boolean
 
     eq(arg: any): boolean
     gt(arg: any): boolean

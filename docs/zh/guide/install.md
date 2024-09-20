@@ -30,7 +30,7 @@ console.log(f.toString()) // '1/2'
 npm install @mop233/algebra
 ```
 
-algebra.mjs 默认导出 algebra 对象：
+algebra.js 默认导出 algebra 对象：
 
 ```js
 import algebra from '@mop233/algebra'

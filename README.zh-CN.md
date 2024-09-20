@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Algebra</h1>
-  <p>English | <a href="./README.zh-CN.md" target="_blank">简体中文</a></p>
+  <p>简体中文 | <a href="./README.md" target="_blank">English</a></p>
   <p>
     <a href="https://www.npmjs.com/package/@mop233/algebra" target="_blank" style="text-decoration: none;">
       <img src=https://badgen.net/npm/v/@mop233/algebra>
@@ -14,9 +14,9 @@
   </p>
 </div>
 
-[Algebra](https://mop233.github.io/algebra/) is a small, fast, and easy-to-use JavaScript library used for basic algebraic operations.
+[Algebra](https://mop233.github.io/algebra/zh/) 是一个小巧、快速且易用的 JavaScript 库，它用于初级的代数运算。
 
-## Installation
+## 安装使用
 
 ### Common JS
 
@@ -24,7 +24,7 @@
 npm install @mop233/algebra
 ```
 
-After installation, you can directly import the algebra object:
+安装后，可以直接导入 algebra 对象：
 
 ```js
 const algebra = require('@mop233/algebra')
@@ -32,7 +32,7 @@ const algebra = require('@mop233/algebra')
 console.log(algebra.version) // '1.0.0'
 ```
 
-You can also destructure to import only the necessary API:
+也可以解构导入所需的 API：
 
 ```js
 const { Fraction } = require('@mop233/algebra')
@@ -46,7 +46,7 @@ console.log(f.toString()) // '1/2'
 npm install @mop233/algebra
 ```
 
-In ES Module format, algebra.js by default exports the algebra object:
+algebra.js 默认导出 algebra 对象：
 
 ```js
 import algebra from '@mop233/algebra'
@@ -61,7 +61,7 @@ console.log(d1.add(d2).toString()) // '0.3'
 
 ### CDN 引入
 
-The simplest way to use algebra.js in a browser is by importing it via [CDN](https://unpkg.com/@mop233/algebra). After importing, the browser will automatically add the algebra object to the global scope:
+浏览器中使用 algebra.js 最简单的方式就是 [CDN](https://unpkg.com/@mop233/algebra) 引入，引入后浏览器会自动将 algebra 对象添加到全局作用域：
 
 ```html
 <script src="https://unpkg.com/@mop233/algebra"></script>
@@ -75,15 +75,15 @@ The simplest way to use algebra.js in a browser is by importing it via [CDN](htt
 
 ## 快速开始
 
-The algebra object contains three properties:
+algebra 对象包含三个属性：
 
-- version: The version number of the algebra.js library.
-- Decimal: A class used to generate integers and decimals, which includes various operations and methods for them.
-- Fraction: A class used to generate fractions, which includes various operations and methods for fractions.
+- version：用于返回 algebra.js 库的版本号。
+- Decimal：一个用于生成整数和小数的类，并包含了它们的各种运算和操作方法。
+- Fraction：一个用于生成分数的类，并包含了分数的各种运算和操作方法。
 
 ### Decimal
 
-Decimal is a constructor used to generate integers and decimals. It accepts one parameter and returns a Decimal instance object:
+Decimal 是用于生成整数和小数的构造函数，该构造函数接受一个参数，并返回一个 Decimal 实例对象：
 
 ```js
 import algebra from '@mop233/algebra'
@@ -96,7 +96,7 @@ const d2 = new Decimal(3.14)
 d2.toString() // '3.14'
 ```
 
-The Decimal instance object can perform addition, subtraction, multiplication, division, and various other operations:
+Decimal 实例对象可以进行加减乘除四则运算和各种其他运算操作：
 
 ```js
 import algebra from '@mop233/algebra'
@@ -105,33 +105,33 @@ const { Decimal } = algebra
 const d1 = new Decimal(9)
 const d2 = new Decimal(3)
 
-// Addition
+// 加
 d1.add(d2).valueOf() // 12
-// Subtraction
+// 减
 d1.sub(d2).valueOf() // 6
-// Multiplication
+// 乘
 d1.mul(d2).valueOf() // 27
-// Division
+// 除
 d1.div(d2).valueOf() // 3
 
-// Absolute value
+// 绝对值
 d1.abs().valueOf() // 9
-// Negation
+// 相反数
 d2.neg().valueOf() // -3
-// Modulus
+// 取余
 d1.mod(d2).valueOf() // 0
 
-// Equals
+// 等于
 d1.eq(d2) // false
-// Greater than
+// 大于
 d1.gt(d2) // true
-// Less than
+// 小于
 d1.lt(d2) // false
 ```
 
 ### Fraction
 
-Fraction is a constructor used to generate fractions. It accepts two parameters and returns a Fraction instance object:
+Fraction 是用于生成分数的构造函数，该构造函数接受两个参数，并返回一个 Fraction 实例对象：
 
 ```js
 import algebra from '@mop233/algebra'
@@ -143,7 +143,7 @@ f.toString() // '1/2'
 f.toTex() // '\frac{1}{2}'
 ```
 
-The Fraction instance object can perform addition, subtraction, multiplication, division, and various other operations:
+Fraction 实例对象可以进行加减乘除四则运算和各种其他运算操作：
 
 ```js
 import algebra from '@mop233/algebra'
@@ -152,28 +152,28 @@ const { Fraction } = algebra
 const f1 = new Fraction(1, 2)
 const f2 = new Fraction(1, 3)
 
-// Addition
+// 加
 f1.add(f2).toString() // '5/6'
-// Subtraction
+// 减
 f1.sub(f2).toString() // '1/6'
-// Multiplication
+// 乘
 f1.mul(f2).toString() // '1/6'
-// Division
+// 除
 f1.div(f2).toString() // '3/2'
 
-// Absolute value
+// 绝对值
 f1.abs().toString() // '1/2'
-// Negation
+// 相反数
 f1.neg().toString() // '-1/2'
-// Reciprocal
+// 倒数
 f1.rec().toString() // '2'
 
-// Equals
+// 等于
 f1.eq(f2) // false
-// Greater than
+// 大于
 f1.gt(f2) // true
-// Less than
+// 小于
 f1.lt(f2) // false
 ```
 
-For more usage, please refer to [the official documentation of Algebra](https://mop233.github.io/algebra/).
+更多使用方法，请查看 [Algebra 官方文档](https://mop233.github.io/algebra/zh/)。

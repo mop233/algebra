@@ -1,3 +1,13 @@
+## 1.1.1 (2024-09-20)
+
+### Bugs
+
+- fixed some bugs of declaration file
+
+### Docs
+
+- add English documents.
+
 ## 1.1.0 (2024-09-19)
 
 ### Features

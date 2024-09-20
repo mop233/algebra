@@ -1,79 +1,4 @@
-<div align="center">
-  <h1>Algebra</h1>
-  <p>English | <a href="./README.zh-CN.md" target="_blank">简体中文</a></p>
-  <p>
-    <a href="https://www.npmjs.com/package/@mop233/algebra" target="_blank" style="text-decoration: none;">
-      <img src=https://badgen.net/npm/v/@mop233/algebra>
-    </a>
-    <a href="https://npm-stat.com/charts.html?package=%40mop233%2Falgebra" target="_blank" style="text-decoration: none;">
-      <img src=https://badgen.net/npm/dt/@mop233/algebra>
-    </a>
-    <a href="https://github.com/mop233/algebra/blob/main/LICENSE" target="_blank" style="text-decoration: none;">
-      <img src=https://badgen.net/npm/license/@mop233/algebra>
-    </a>
-  </p>
-</div>
-
-[Algebra](https://mop233.github.io/algebra/) is a small, fast, and easy-to-use JavaScript library used for basic algebraic operations.
-
-## Installation
-
-### Common JS
-
-```sh
-npm install @mop233/algebra
-```
-
-After installation, you can directly import the algebra object:
-
-```js
-const algebra = require('@mop233/algebra')
-
-console.log(algebra.version) // '1.0.0'
-```
-
-You can also destructure to import only the necessary API:
-
-```js
-const { Fraction } = require('@mop233/algebra')
-const f = new Fraction(1, 2)
-console.log(f.toString()) // '1/2'
-```
-
-### ES Module
-
-```sh
-npm install @mop233/algebra
-```
-
-In ES Module format, algebra.js by default exports the algebra object:
-
-```js
-import algebra from '@mop233/algebra'
-
-console.log(algebra.version) // '1.0.0'
-
-const { Decimal } = algebra
-const d1 = new Decimal(0.1)
-const d2 = new Decimal(0.2)
-console.log(d1.add(d2).toString()) // '0.3'
-```
-
-### CDN 引入
-
-The simplest way to use algebra.js in a browser is by importing it via [CDN](https://unpkg.com/@mop233/algebra). After importing, the browser will automatically add the algebra object to the global scope:
-
-```html
-<script src="https://unpkg.com/@mop233/algebra"></script>
-<script>
-  console.log(algebra.version) // '1.0.0'
-
-  const { Decimal } = algebra
-  console.log(Decimal.random().toString())  // '7'
-</script>
-```
-
-## 快速开始
+# Quick Start
 
 The algebra object contains three properties:
 
@@ -81,7 +6,11 @@ The algebra object contains three properties:
 - Decimal: A class used to generate integers and decimals, which includes various operations and methods for them.
 - Fraction: A class used to generate fractions, which includes various operations and methods for fractions.
 
-### Decimal
+::: tip
+For convenience and code consistency, all sample codes hereafter will use the ES Module format.
+:::
+
+## Decimal
 
 Decimal is a constructor used to generate integers and decimals. It accepts one parameter and returns a Decimal instance object:
 
@@ -129,7 +58,7 @@ d1.gt(d2) // true
 d1.lt(d2) // false
 ```
 
-### Fraction
+## Fraction
 
 Fraction is a constructor used to generate fractions. It accepts two parameters and returns a Fraction instance object:
 
@@ -175,5 +104,3 @@ f1.gt(f2) // true
 // Less than
 f1.lt(f2) // false
 ```
-
-For more usage, please refer to [the official documentation of Algebra](https://mop233.github.io/algebra/).
