@@ -493,3 +493,15 @@ Decimal.random(0.1, 9, 0) // TypeError: [algebra.js] Must be type of Integer.
 ```
 
 :::
+
+## 链式调用
+
+上述方法中，凡是返回 Decimal 实例对象的方法，都可以采用链式调用：
+
+```js
+import algebra from '@mop233/algebra'
+
+const { Decimal } = algebra
+
+Decimal.random().add(3).mul(2).neg().toString() // '-24'
+```

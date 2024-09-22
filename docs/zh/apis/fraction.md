@@ -312,3 +312,15 @@ Fraction.compare(f1, f2) // 1
 Fraction.random().toString() // '4/7'
 Fraction.random().toString() // '6/4'
 ```
+
+## 链式调用
+
+上述方法中，凡是返回 Fraction 实例对象的方法，都可以采用链式调用：
+
+```js
+import algebra from '@mop233/algebra'
+
+const { Fraction } = algebra
+
+Fraction.random().mul(2).rec().toString() // '2/3'
+```
