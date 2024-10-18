@@ -89,7 +89,7 @@ new Fraction(8, 1).toString() // '8'
 
 **`toTex()`**
 
-与 [`toString()`](#tostring) 方法类似，返回的是 $\LaTeX$ 形式的字符串。
+与 [`toString()`](#tostring) 方法类似，返回的是 [$\LaTeX$](../latex/base) 形式的字符串。
 
 ```js
 new Fraction(1, 2).toTex() // '\frac{1}{2}'

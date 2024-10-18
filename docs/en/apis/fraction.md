@@ -89,7 +89,7 @@ new Fraction(8, 1).toString() // '8'
 
 **`toTex()`**
 
-Similar to the [`toString()`](#tostring) method, this returns the string representation in $\LaTeX$ format.
+Similar to the [`toString()`](#tostring) method, this returns the string representation in [$\LaTeX$](../latex/base) format.
 
 ```js
 new Fraction(1, 2).toTex() // '\frac{1}{2}'

@@ -21,12 +21,15 @@ features:
   - icon: 🌈
     title: Decimal
     details: Solved the accuracy issue of JavaScript, any decimal operation will yield the correct result.
+    link: /apis/decimal
   - icon: ☀️
     title: Fraction
     details: It can accurately display fraction by string, and perform any fraction-related calculations.
+    link: /apis/fraction
   - icon: ☁️
     title: LaTeX
     details: By calling the toTex method of the Fraction instance, it can be converted to LaTeX format.
+    link: /latex/base
 ---
 
 <style>

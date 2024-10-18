@@ -21,12 +21,15 @@ features:
   - icon: 🌈
     title: 小数运算
     details: 解决了 JavaScript 自身小数运算的精度问题，任何小数运算将得到正确的结果。
+    link: /zh/apis/decimal
   - icon: ☀️
     title: 分数运算
     details: 增加了分数，可以正确显示分数的字符串形式，还可以进行任何分数运算。
+    link: /zh/apis/fraction
   - icon: ☁️
     title: LaTeX
     details: 调用 Fraction 实例对象的 toTex 方法，就可以将分数转换为 LaTeX 格式。
+    link: /zh/latex/base
 ---
 
 <style>

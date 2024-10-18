@@ -30,6 +30,7 @@ function nav() {
   return [
     { text: '指南', link: '/zh/guide/install', activeMatch: '/guide/' },
     { text: 'API', link: '/zh/apis/decimal', activeMatch: '/apis/' },
+    { text: 'Latex', link: '/zh/latex/base', activeMatch: '/latex/' },
     {
       text: version,
       link: 'https://github.com/mop233/algebra/blob/main/CHANGELOG.md'
@@ -51,6 +52,15 @@ function sidebar() {
       items: [
         { text: 'Decimal', link: '/zh/apis/decimal' },
         { text: 'Fraction', link: '/zh/apis/fraction' }
+      ]
+    },
+    {
+      text: 'Latex',
+      items: [
+        { text: '初级语法', link: '/zh/latex/base' },
+        { text: '高级语法', link: '/zh/latex/senior' },
+        { text: '化学公式', link: '/zh/latex/chemistry' },
+        { text: '相关工具', link: '/zh/latex/tools' }
       ]
     }
   ]
