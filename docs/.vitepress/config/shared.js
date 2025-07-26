@@ -4,12 +4,12 @@ import { search as zhSearch } from './zh'
 const baseURL = process.env.BASE_URL || '/algebra/'
 
 export const shared = defineConfig({
-  base: baseURL,
+  // base: baseURL,
   title: 'Algebra',
   rewrites: {
     'en/:rest*': ':rest*'
   },
-  head: [['link', { rel: 'icon', href: `${baseURL}logo.svg` }]],
+  head: [['link', { rel: 'icon', href: `/logo.svg` }]],
   cleanUrls: true,
   ignoreDeadLinks: true,
   lastUpdated: true,
