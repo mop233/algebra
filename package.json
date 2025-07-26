@@ -48,7 +48,8 @@
     "build": "rm -rf dist && rollup -c",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "push": "git push && git subtree push --prefix docs/.vitepress/dist origin gh-pages"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
