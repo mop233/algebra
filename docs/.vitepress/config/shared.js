@@ -1,10 +1,15 @@
+import { defineConfig } from 'vitepress'
 import { search as zhSearch } from './zh'
 
-export const shared = {
+const baseURL = process.env.BASE_URL || '/algebra/'
+
+export const shared = defineConfig({
+  base: baseURL,
   title: 'Algebra',
   rewrites: {
     'en/:rest*': ':rest*'
   },
+  head: [['link', { rel: 'icon', href: `${baseURL}logo.svg` }]],
   cleanUrls: true,
   ignoreDeadLinks: true,
   lastUpdated: true,
@@ -35,4 +40,4 @@ export const shared = {
   markdown: {
     math: true
   }
-}
+})
